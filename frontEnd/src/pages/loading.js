@@ -1,16 +1,14 @@
 import { useState } from "react";
-import { Login } from "../components/Login";
+
 import { Inter } from "next/font/google";
+import { Waiting } from "@/components/Waiting";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const BASE_URL = "http://localhost:8080";
-
-export default function Home() {
-
+export default function Loading() {
   return (
     <main>
-      <Login />
+      <Waiting />
     </main>
   );
 }
